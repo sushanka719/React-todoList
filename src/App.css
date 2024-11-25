@@ -1,38 +1,154 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    min-height: 20rem;
+    width: 60%;
+}
+
+.nav-bar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.completed{
+    text-decoration: line-through;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-form {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.add-btn {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.filter-container {
+  margin-bottom: 10px;
+}
+
+.filter-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mark-all-btn {
+  padding: 8px 15px;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notes-text {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 7px;
+}
+
+ul {
+    list-style: none;
+}
+
+.numbering {
+    margin-right: 1rem;
+    color: #555;
+}
+.item-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.item {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #555;
+
+}
+
+.action-buttons {
+  margin-left: auto;
+}
+
+.action-buttons button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red color for delete button */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.complete-button {
+  background-color: #4caf50; /* Green color for mark as complete button */
+  color: white;
 }
+
+.complete-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+
+
